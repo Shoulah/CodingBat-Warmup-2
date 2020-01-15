@@ -74,7 +74,7 @@ print(last2("axxxaaxx"))
 array_count9([1, 2, 9]) → 1
 array_count9([1, 9, 9]) → 2
 array_count9([1, 9, 9, 3, 9]) → 3 """
-
+""" 
 def array_count9(nums):
     counter = 0
     for n in nums:
@@ -85,3 +85,30 @@ def array_count9(nums):
 
 print(array_count9([1, 9,9]))
 print(array_count9([1]))
+
+ """
+
+"""  Given an array of ints, return True if one of the first 4 elements in the array is a 9. The array length may be less than 4.
+
+
+array_front9([1, 2, 9, 3, 4]) → True
+array_front9([1, 2, 3, 4, 9]) → False
+array_front9([1, 2, 3, 4, 5]) → False """
+
+def array_front9(nums):
+    is4Exists = False
+    if len(nums) < 4:
+        for i in range(len(nums)):
+            if nums[i]  == 9:
+                is4Exists = True
+                break
+    else:
+        for i in range(4):
+            if nums[i] == 9:
+                is4Exists = True
+                break
+    return is4Exists
+
+
+print(array_front9([1, 2, 9]))            
+
