@@ -94,7 +94,7 @@ print(array_count9([1]))
 array_front9([1, 2, 9, 3, 4]) → True
 array_front9([1, 2, 3, 4, 9]) → False
 array_front9([1, 2, 3, 4, 5]) → False """
-
+""" 
 def array_front9(nums):
     is4Exists = False
     if len(nums) < 4:
@@ -109,6 +109,27 @@ def array_front9(nums):
                 break
     return is4Exists
 
-
 print(array_front9([1, 2, 9]))            
+ """
 
+ 
+""" Given an array of ints, return True if the sequence of numbers 1, 2, 3 appears in the array somewhere.
+
+
+array123([1, 1, 2, 3, 1]) → True
+array123([1, 1, 2, 4, 1]) → False
+array123([1, 1, 2, 1, 2, 3]) → True """
+
+def array123(nums):
+    is123Exists = False
+    if len(nums) >= 3:
+        i = 0
+        while i < len(nums) - 2:
+            if nums[i] == 1 and nums[i+1] == 2 and nums[i+2] == 3:
+                is123Exists = True
+                break
+            i +=1
+    return is123Exists
+
+
+print(array123([1, 1, 2, 1, 2, 3]))
