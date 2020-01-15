@@ -1,11 +1,11 @@
-""" def string_times(str, n):
+def string_times(str, n):
     if n >= 0:
         return str * n
 
 
-print(string_times("ah", 3)) """
+print(string_times("ah", 3)) 
 
-""" def front_times(str, n):
+def front_times(str, n):
     if len(str) < 3:
         return n * str
     else:
@@ -13,9 +13,9 @@ print(string_times("ah", 3)) """
 
 print(front_times("Ahmed", 2)) 
 print(front_times("Shoulah", 3))
-print(front_times("ah", 3))   """     
+print(front_times("ah", 3))     
 
-""" 
+
 def string_bits(str):
     if len(str) == 1:
         return str
@@ -29,8 +29,8 @@ def string_bits(str):
         return result
 
 print(string_bits("Shoulah"))            
- """
-""" 
+
+ 
 def string_splosion(str):
     if len(str) > 0:
         result = ""
@@ -41,7 +41,7 @@ def string_splosion(str):
         return result
 
 print(string_splosion("Code"))     
- """   
+   
 
 """ 
 Given a string, return the count of the number of times that a substring length 2 appears in 
@@ -52,7 +52,7 @@ last2('hixxhi') → 1
 last2('xaxxaxaxx') → 1
 last2('axxxaaxx') → 2 """
 
-""" 
+
 def last2(str):
     counter = 0 #initialize the counter 
     if len(str) > 2:
@@ -66,7 +66,7 @@ def last2(str):
     return counter
 
 print(last2("axxxaaxx"))        
- """
+ 
 
 """  Given an array of ints, return the number of 9's in the array.
 
@@ -74,7 +74,7 @@ print(last2("axxxaaxx"))
 array_count9([1, 2, 9]) → 1
 array_count9([1, 9, 9]) → 2
 array_count9([1, 9, 9, 3, 9]) → 3 """
-""" 
+ 
 def array_count9(nums):
     counter = 0
     for n in nums:
@@ -86,7 +86,7 @@ def array_count9(nums):
 print(array_count9([1, 9,9]))
 print(array_count9([1]))
 
- """
+ 
 
 """  Given an array of ints, return True if one of the first 4 elements in the array is a 9. The array length may be less than 4.
 
@@ -94,7 +94,7 @@ print(array_count9([1]))
 array_front9([1, 2, 9, 3, 4]) → True
 array_front9([1, 2, 3, 4, 9]) → False
 array_front9([1, 2, 3, 4, 5]) → False """
-""" 
+ 
 def array_front9(nums):
     is4Exists = False
     if len(nums) < 4:
@@ -110,7 +110,7 @@ def array_front9(nums):
     return is4Exists
 
 print(array_front9([1, 2, 9]))            
- """
+ 
 
  
 """ Given an array of ints, return True if the sequence of numbers 1, 2, 3 appears in the array somewhere.
@@ -119,7 +119,7 @@ print(array_front9([1, 2, 9]))
 array123([1, 1, 2, 3, 1]) → True
 array123([1, 1, 2, 4, 1]) → False
 array123([1, 1, 2, 1, 2, 3]) → True """
-""" 
+ 
 def array123(nums):
     is123Exists = False
     if len(nums) >= 3:
@@ -134,7 +134,7 @@ def array123(nums):
 
 print(array123([1, 1, 2, 1, 2, 3]))
 
- """
+ 
 
 """ Given 2 strings, a and b, return the number of the positions where they contain the same length 2 substring.
  So "xxcaazz" and "xxbaaz" yields 3, since the "xx", "aa", and "az" substrings appear in the same place in both strings.
@@ -161,4 +161,4 @@ def string_match(a, b):
 
 print(string_match('xxcaazz', 'xxbaaz'))
 print(string_match('abc', 'abc')) 
-print(string_match('abc', 'axc'))                   
+print(string_match('abc', 'axcdddddddddddddddddd'))                   
