@@ -15,7 +15,7 @@ print(front_times("Ahmed", 2))
 print(front_times("Shoulah", 3))
 print(front_times("ah", 3))   """     
 
-
+""" 
 def string_bits(str):
     if len(str) == 1:
         return str
@@ -29,3 +29,15 @@ def string_bits(str):
         return result
 
 print(string_bits("Shoulah"))            
+ """
+
+def string_splosion(str):
+    if len(str) > 0:
+        result = ""
+        i = 1
+        while i <= len(str):
+            result += str[0:i]
+            i += 1
+        return result
+
+print(string_splosion("Code"))        
